@@ -8,11 +8,11 @@ if ($connect->connect_error) {
 
 if (isset($_POST['submit'])) {
 
-    $sql = "SELECT * FROM users WHERE username = '" . $_POST['login'] . "' and password = '" . $_POST['haslo'] . "'";
+    $sql = "SELECT * FROM users WHERE username = '" . $_POST['username'] . "' and password = '" . $_POST['password'] . "'";
     $result = mysqli_query($connect, $sql);
 
     if (mysqli_num_rows($result) > 0) {
-        echo "Witamy, ".$_POST['login'];
+        echo "Witamy, ".$_POST['username'];
     }
     else {
         echo "<h3>Niepoprawne hasło lub login.</h3>";
