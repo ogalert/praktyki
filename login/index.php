@@ -30,8 +30,8 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
     <form method="post" action="">
-      <p> Login: </p> <input type="text" value="admin" name="username" id=""> <br>
-       <p> Hasło </p> <input type="password" value="test" name="password" id=""> <br>
+      <p> Login: </p> <input type="text" name="username" id=""> <br>
+       <p> Hasło </p> <input type="password" name="password" id=""> <br>
         <input type="submit" name="submit" value="Zaloguj się">
     </form>
 </body>
