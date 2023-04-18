@@ -8,10 +8,9 @@ if ($connect->connect_error) {
 
 if (isset($_POST['submit'])) {
 
-    $sql = "SELECT * FROM users WHERE username = '" . $_POST['username'] . "' and password = '" . $_POST['password'] . "'";
-    $result = mysqli_query($connect, $sql);
+    $select = "SELECT * FROM users WHERE username = '" . $_POST['username'] . "' and password = '" . $_POST['password'] . "'";
 
-    if (mysqli_num_rows($result) > 0) {
+    if (mysqli_num_rows(mysqli_query($connect, $select) > 0) {
         echo "Witamy, ".$_POST['username'];
     }
     else {
