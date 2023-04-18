@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
 <body>
     <form method="post" action="">
       <p> Login: </p> <input type="text" name="username" id=""> <br>
-       <p> Hasło </p> <input type="password" name="password" id=""> <br>
+       <p> Hasło: </p> <input type="password" name="password" id=""> <br>
         <input type="submit" name="submit" value="Zaloguj się">
     </form>
 </body>
