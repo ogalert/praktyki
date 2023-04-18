@@ -7,10 +7,8 @@ if ($connect->connect_error) {
 }
 
 if (isset($_POST['submit'])) {
-    $login = $_POST['login'];
-    $pass = $_POST['haslo'];
 
-    $sql = "SELECT * FROM users WHERE username = '$login' and password = '$pass'";
+    $sql = "SELECT * FROM users WHERE username = '" . $_POST['login'] . "' and password = '" . $_POST['haslo'] . "'";
     $result = mysqli_query($connect, $sql);
 
     if (mysqli_num_rows($result) > 0) {
