@@ -18,7 +18,6 @@ if (isset($_POST['submit'])) {
         echo "<h3>Niepoprawne hasło lub login.</h3>";
     }
 }
-mysqli_close($connect);
 ?>
 
 <!DOCTYPE html>
